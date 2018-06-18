@@ -1,0 +1,24 @@
+$heading-left: (0 93.93199323689649%, 28px, 15.031px, 'heading-left');
+$heading-right: (0 0, 28.03px, 15px, 'heading-right');
+$svg-sprites: ($heading-left, $heading-right, );
+
+@mixin svg-sprite($sprite) {
+  width: nth($sprite, 2);
+  height: nth($sprite, 3);
+  background-image: url(/images/sprite.svg);
+  background-repeat: no-repeat;
+  background-position: nth($sprite, 1);
+}
+
+// The `svg-sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include svg-sprites($svg-sprites);
+@mixin svg-sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 4);
+    .icon-#{$sprite-name} {
+      @include svg-sprite($sprite);
+    }
+  }
+}

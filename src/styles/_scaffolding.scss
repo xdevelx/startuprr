@@ -1,0 +1,19 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-green {
+  color: #00a99d;
+}
