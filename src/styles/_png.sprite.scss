@@ -5,7 +5,7 @@ $png-sprites: ($arrow-left, $arrow-right, );
 @mixin png-sprite($sprite) {
   width: nth($sprite, 3);
   height: nth($sprite, 4);
-  background-image: url(/images/sprite.png);
+  background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
   background-position: nth($sprite, 1) nth($sprite, 2);
 }

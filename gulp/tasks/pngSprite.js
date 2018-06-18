@@ -13,7 +13,7 @@ export default function pngSprite() {
     imgName: 'sprite.png',
     cssName: '_png.sprite.scss',
     cssTemplate: 'src/styles/png-sprite.template.mustache',
-    imgPath: '/images/sprite.png' 
+    imgPath: '../images/sprite.png' 
   }));
  
   // Pipe image stream through image optimizer and onto disk

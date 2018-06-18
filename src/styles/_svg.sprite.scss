@@ -5,7 +5,7 @@ $svg-sprites: ($heading-left, $heading-right, );
 @mixin svg-sprite($sprite) {
   width: nth($sprite, 2);
   height: nth($sprite, 3);
-  background-image: url(/images/sprite.svg);
+  background-image: url(../images/sprite.svg);
   background-repeat: no-repeat;
   background-position: nth($sprite, 1);
 }

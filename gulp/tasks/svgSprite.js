@@ -53,7 +53,7 @@ function svgSprite() {
           }
         },
         variables: {
-          path: '/images/sprite.svg'
+          path: '../images/sprite.svg'
         }
       }))
       .pipe(gulp.dest(paths.images.dest));
