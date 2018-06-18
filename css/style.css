@@ -595,14 +595,14 @@ input[type="button"].btn--block {
   .heading__title:before {
     width: 28px;
     height: 15.031px;
-    background-image: url(/images/sprite.svg);
+    background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: 0 93.93199%;
     left: 10px; }
   .heading__title:after {
     width: 28.03px;
     height: 15px;
-    background-image: url(/images/sprite.svg);
+    background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     right: 10px; }
